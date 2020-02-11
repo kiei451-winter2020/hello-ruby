@@ -21,3 +21,9 @@
 # To rectify this, you can convert the number into a string
 # "i would like #{5} tacos"
 
+roll1 =rand(1..6) 
+roll2 =rand(1..6)
+total = roll1 + roll2
+puts "#{roll1} #{roll2}"
+
+puts "The total is #{total}"
