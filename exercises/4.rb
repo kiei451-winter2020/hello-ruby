@@ -27,3 +27,11 @@ weather_data = {
   ]
 }
 
+current_temp = weather_data [:current][:temperature]
+current_cond = weather_data [:current][:conditions]
+tomorrow_temp = weather_data [:forecast][0][:temperature]
+tomorrow_cond = weather_data [:forecast][0][:conditions]
+forecast_temp = weather_data [:forecast][1][:temperature]
+forecast_cond = weather_data [:forecast][1][:conditions]
+puts "Currently it is #{current_temp} degrees and #{current_cond}. Tomorrow it will be #{tomorrow_temp} and #{tomorrow_cond}"
+puts "The next day it we will see #{forecast_cond} skies, with a temperature of #{forecast_temp}"
